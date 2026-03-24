@@ -1,0 +1,28 @@
+{
+  "name": "car-part-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node dist/monitor.js",
+    "add": "npx tsc && node scripts/add-monitors.js"
+  },
+  "dependencies": {
+    "@types/underscore": "^1.13.0",
+    "axios": "^1.13.6",
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.2.0",
+    "node-cron": "^4.2.1",
+    "qs": "^6.15.0",
+    "underscore": "^1.13.8"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.9",
+    "@types/node": "^25.5.0",
+    "@types/qs": "^6.15.0",
+    "typescript": "^5.9.3"
+  }
+}

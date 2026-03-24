@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "qs", "underscore"],
+    "allowJs": true,
+    "outDir": "dist"
+  },
+  "include": ["*", "utils/*", "scripts/*", "db/*"],
+  "exclude": ["node_modules"]
+}
