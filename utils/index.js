@@ -1,5 +1,5 @@
 // Helper function to prevent all requests from running concurently
-async function runSequential(tasks, delay = 500) {
+export const runSequential = async (tasks, delay = 500) => {
     const results = [];
     for (const task of tasks) {
         try {
