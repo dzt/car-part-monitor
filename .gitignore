@@ -144,6 +144,7 @@ vite.config.ts.timestamp-*
 .vite/
 
 # Project specific
+.DS_Store
 junkyard.db
 config.json
 monitors.json
