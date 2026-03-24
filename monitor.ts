@@ -3,8 +3,8 @@ import config from './config.json';
 import _ from 'underscore';
 import qs from 'qs';
 
+import * as cheerio from 'cheerio';
 import cron from 'node-cron';
-import cheerio from 'cheerio';
 import defaults from './defaults';
 import utils from './utils/index';
 import axios, { AxiosError } from 'axios';
@@ -43,6 +43,7 @@ const fetchFormData = async (query: PartsQuery) : Promise<FormSubmission> => {
         const response = await axios.post(fetch_url, qs.stringify(form_data), {
             headers: defaults.headers
         });
+        // console.log(response.data);
         const $ = cheerio.load(response.data);
         let form_extract: Record<string, string> = {};
         $('input[type="hidden"]').each((_, el) => {

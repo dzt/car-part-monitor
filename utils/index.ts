@@ -1,5 +1,5 @@
 // Helper function to prevent all requests from running concurently
-export const runSequential = async (tasks, delay = 500) => {
+export const runSequential = async (tasks: (() => Promise<any>)[], delay = 500) => {
     const results = [];
     for (const task of tasks) {
         try {
