@@ -5,7 +5,7 @@
         "description": "FC3S, Series 4",
         "year_range": [1986, 1988],
         "schedule": "00 * * * *",
-        "discord_webhook": "https://discord.com/api/webhooks/1479857206156464140/IilBwzLnPjcdtWxEFqXfdKG8Xl4PiW3QrHjD4aexxdLzHoEW214H9YhlXGiiKrEFnoN_",
+        "discord_webhook": "https://discord.com/api/webhooks/...",
         "parts": [
             { "type": "Engine", "variant": "[ALL]" },
             { "type": "Transmission", "variant": "MT, Turbo" },
