@@ -14,4 +14,4 @@ export const runSequential = async (tasks, delay = 500) => {
     return results;
 }
 
-module.exports = { runSequential }
+export default { runSequential }
